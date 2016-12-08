@@ -489,7 +489,8 @@ func (ctx *Context) getValueUsingJSON(index int, t reflect.Type) reflect.Value {
 
 	err := json.Unmarshal([]byte(js), v)
 	if err != nil {
-		panic(err)
+		//panic(err)
+		return reflect.Zero(t)
 	}
 
 	return reflect.ValueOf(v).Elem()
