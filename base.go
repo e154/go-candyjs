@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"gopkg.in/e154/go-duktape.v2"
+	"gopkg.in/e154/go-duktape.v3"
 )
 
 const goProxyPtrProp = "\xff" + "goProxyPtrProp"
